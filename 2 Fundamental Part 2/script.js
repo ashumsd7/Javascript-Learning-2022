@@ -115,8 +115,11 @@
 // console.log(personDetail.age);
 
 // -LOOP-----
-let i = 1;
+// let i = 1;
 
-while (i !== 10) {
-  console.log(i++);
-}
+// while (i !== 10) {
+//   console.log(i++);
+// }
+
+const arr= ['ashu', 'mohan', 'dev', 'cummins']
+console.table(arr);
