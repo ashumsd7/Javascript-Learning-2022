@@ -74,9 +74,10 @@ console.log(categories);
 const {
   name: restaurentName,
   openingHours: hours,
-  categories: tags
+  categories: tags,
+  menu=['a','b','c']
 } = restaurant
 
 
-console.log(restaurentName,hours,tags);
+console.log(restaurentName,hours,tags,menu);
 
