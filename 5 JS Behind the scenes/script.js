@@ -105,6 +105,100 @@
 
 // console.log(obj.myMath());
 
+//THIS keyword recap
+
+// console.log(this);
+
+
+// const calcAge= (birthYear)=>{
+//     console.log(2037-birthYear);
+    
+//     console.log(this);
+// }
+// calcAge(1997)
+
+// const jonas={
+//     year:1991,
+//     calcAge: function(){
+//         console.log(this);
+//         console.log(2037-this.year);
+//     }
+// }
+
+
+
+
+// const matilda={
+//     year:2017
+// }
+
+// matilda.calcAge= jonas.calcAge;
+// matilda.calcAge(1991)
+// // jonas.calcAge(1991)
+
+
+// const f= jonas.calcAge;
+
+// f();
+
+
+
+// ### Regular Function vs Arrow ⇒ Functions========
+
+// console.log(this.myName);
+
+// const jonas={
+//     year:1991,
+//     firstName:'Jonas',
+//     calcAge: function(){
+//         // console.log(this);
+//         // console.log(2037-this.year);
+//         // const self= this;
+//         // console.log(self);
+//         // const isMillenial= function(){
+//         //     console.log(self);
+//         //     console.log(self.year>= 1981 && self.year <= 1986);
+//         // }
+
+
+
+//         const isMillenial= ()=>{
+//             console.log(this);
+//             console.log(this.year>= 1981 && this.year <= 1986);
+//         }
+
+
+//         isMillenial()
+//     },
+//     greet:()=> console.log(`hey ${this.firstName}`)
+// }
+
+
+// jonas.greet();
+// jonas.calcAge();
+
+
+// /ar
+// var  addExpr= function(a,b){
+//     console.log(arguments);
+//     return a+b;
+// }
+
+// var  addArrpow= (a,b) => {
+//     console.log(arguments);
+//     return a+b
+// };
+
+// addArrpow(2,3)
+
+// addExpr(1,2)
+// addExpr(1,2,4,5,6,7,87)
+
+
+
+
+
+
 
 
 
