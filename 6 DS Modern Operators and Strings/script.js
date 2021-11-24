@@ -228,3 +228,10 @@
 // const newMap= new Map([['ashu','charawan', '224203'],[1,'c'],['vill','charaw']])
 
 // console.log(newMap);
+ 
+
+// /./WORKING ON STRINGS
+
+const airline= 'TAP Air Portugal'
+const plane = 'A320'
+
