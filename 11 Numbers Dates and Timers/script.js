@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -251,3 +251,107 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+
+
+
+// console.log(27 === 27.0);
+// console.log(.1+.2); 
+
+
+// console.log(Number('23'));
+// console.log(typeof +'23');
+
+// // /parsing
+
+// console.log(Number.parseInt('1234pz', 10));
+
+// console.log(Number.parseFloat('2.5rem'));
+
+// console.log(Number.isNaN(23/0));
+
+// console.log(Number.isFinite(20));
+// console.log(Number.isFinite('20'));
+
+// console.log(Number.isFinite(23.0003));
+
+// console.log(Number.isInteger(233.44));
+
+
+
+// console.log(Math.sqrt(2));
+// console.log((2**(1/2)));
+// console.log((27**(1/3)));
+
+// console.log(Math.max(1,23,44,'55px'));
+
+// console.log( Math.trunc(Math.random()*6)+1);
+
+// console.log(Math.trunc(2333.333));
+
+// console.log(Math.round(233.7));
+// console.log(Math.round(233.1));
+
+
+// console.log(Math.ceil(233.1));
+// console.log(Math.floor(233.9));
+// console.log(Math.round(233.1));
+
+// console.log(233.55.toFixed(1));
+// console.log(233.15.toFixed());
+
+// console.log(12%5);
+
+// console.log(2 ** 53 + 10);
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_SAFE_INTEGER);
+
+
+// console.log(53764333367347636745376547n);
+// console.log(BigInt(333333334343433434344));
+
+
+//WORKING WITH DATES
+// console.log(new Date());
+
+// console.log(new Date('Nov 25 2021 13:49:00'));
+
+// console.log(new Date('December 01,2021'));
+
+
+// console.log(new Date(2021, 11, 26, 11, 12, 59));
+
+
+// console.log(new Date(0));
+
+// console.log(new Date(0).getTime());
+
+// console.log(new Date().getFullYear());
+// console.log(new Date().getMonth());
+// console.log(new Date().getDay());
+// console.log(new Date().getDate());
+// console.log(new Date().getHours());
+// console.log(new Date().getMinutes());
+// console.log(new Date().getSeconds());
+
+
+// console.log(new Date().getTime());
+
+// console.log(new Date(1637831308455));
+
+// console.log(Date.now());
+
+// const future = new Date(2051, 11, 26, 11, 12, 59)
+
+// console.log(+future);
+
+const calcDaysPassed = (date1, date2) => date2 - date1;
+const days1=calcDaysPassed(new Date(2051, 11, 26), new Date(2051, 11, 29))
+
+console.log(days1/(1000*60*60*24));
+
+
+
+
+
+
