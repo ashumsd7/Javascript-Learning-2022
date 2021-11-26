@@ -84,9 +84,7 @@
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-
 // const eurToUsd = 1.1;
-
 
 // const movementsUSD = movements.map(function (mov) {
 //   return Math.ceil(mov * eurToUsd);
@@ -94,26 +92,45 @@
 
 // console.log(movementsUSD);
 
-
 // const movementsUSDfor=[]
 // for (const mov of movements) {
 //   movementsUSDfor.push(Math.ceil(mov * eurToUsd));
-  
+
 // }
 
 // console.log(movementsUSDfor);
 
+// const user = 'Steven Thomas Williams';
 
+// const username = user.toLowerCase().split(' ').map(name => name[0])
 
+// console.log(username.join(''));
 
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const user = 'Steven Thomas Williams';
+// const deposits = movements.filter(mov => mov > 0)
 
-const username = user.toLowerCase().split(' ')
+// console.log(deposits);
 
-console.log(username);
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+// const balance = movements.reduce((acc,curr,_,_2) => {
+//   return acc + curr;
+// },1000)
 
+// console.log(balance);
 
+// const eurToUsd = 1.1;
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
+// const totalDepositsUSD= movements
+//   .filter(mov => mov > 0)
+//   .map(mov => mov * eurToUsd)
+//   .reduce((acc, curr) => acc + curr);
+  
+//   console.log(totalDepositsUSD);
 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const firstWithdrawal= movements.find(mov=>mov<0)
+console.log(firstWithdrawal);

@@ -61,12 +61,10 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+
+//showing movements
 const displayMovements = function (movements) {
-
   containerMovements.innerHTML=``
-
-
-
   movements.forEach(function (mov, i) {
     // <div class="movements__date">3 days ago</div>;
     const type= mov>0 ? 'deposit' :'withdrawal'
@@ -84,6 +82,75 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
-// console.log(containerMovements.innerHTML);
+
+
+
+
+//inserting Users Names
+const createUsernames = function(accs) {
+  accs.forEach(acc => {
+  acc.username = acc.owner
+    .toLowerCase()
+    .split(' ')
+    .map(name => name[0])
+    .join('');
+  })
+}
+
+
+
+
+//Calculating All Balance
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, curr, _, _2) => {
+    return acc + curr;
+  }, 0);
+ 
+  labelBalance.textContent = `${balance} ₹`;
+}
+
+calcDisplayBalance(account1.movements);
+
+
+
+//Display Summery
+const calcDisplaySummery = function (movements) {
+  const incomes = movements
+    .filter(mov => mov > 0)
+    .reduce((acc, curr) => acc + curr);
+  
+  labelSumIn.textContent = `${incomes}₹`;
+
+  const outcomes = movements
+    .filter(mov => mov < 0)
+    .reduce((acc, curr) => acc + curr);
+  
+  labelSumOut.textContent = `${Math.abs(outcomes)}₹`;
+
+  const interest = movements
+    .filter(mov => mov > 0)
+    .map(deposit => (deposit * 1.2) / 100).filter(int=>int>=1)
+    .reduce((acc, int) => a
+    cc + int);
+  labelSumInterest.textContent = `${Math.abs(interest)}₹`;
+
+}
+
+calcDisplaySummery(account1.movements)
+
+//Event Handlers
+
+btnLogin.addEventListener('click', function () {
+  console.log("Login");
+})
+
+
+
+
+
+
+
+
+
 
 
