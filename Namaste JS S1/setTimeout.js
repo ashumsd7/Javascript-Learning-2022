@@ -1,10 +1,13 @@
 function x() {
-  var i = 1;
+  var y = 1;
 
   for (var i = 0; i <= 5; i++) {
-    setTimeout(function () {
-      console.log(i);
-    }, i * 1000);
+    function close(i) {
+      setTimeout(function () {
+        console.log(i);
+      }, i * 1000);
+    }
+    close(i);
   }
   console.log("firstName");
 }
